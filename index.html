@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html> 
+  <head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="./../dist/output.css">
+  </head>
+  <div class="fixed z-50 top-0 h-[70px] lg:h-[100px] w-full flex items-center bg-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.15)]">
+    <div class="container mx-auto px-10 lg:px-24 flex justify-between items-center" id="top-bar">
+      <div class="flex items-center"><img class="h-[40px] lg:h-auto" src="./../../assets/icon.svg">
+        <div class="pl-5">
+          <div class="text-base lg:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-[#5580E9] to-[#8961D1] font-semibold">Автошкола ВятГУ</div>
+        </div>
+      </div>
+      <div class="hidden lg:flex lg:space-x-8"><a class="text-base font-semibold" href="/">Обучение</a><a class="text-base font-semibold" href="/">Информация</a><a class="text-base font-semibold" href="/">Отзывы</a><a class="text-base font-semibold" href="/">Галерея</a></div>
+      <div class="lg:hidden cursor-pointer" id="top-bar-menu-open"><img src="./../../assets/burger.svg"></div>
+    </div>
+  </div>
+  <div class="mx-auto mt-[70px] lg:mt-[100px] w-full lg:container h-full lg:h-[600px] relative">
+    <div class="h-[100px] md:hidden"></div>
+    <div class="flex flex-col lg:flex-row lg:justify-end h-full"><img src="/assets/woman-traveling-with-her-car.png"></div>
+    <div class="absolute flex flex-col md:flex-row top-0 h-full w-full">
+      <div class="h-full w-1/2 hidden md:block md:bg-gradient-to-r from-[#5580E9FF] via-[#5580E9FF] 2xl:to-[#557fe9FF] to-[#5580E9B3]"></div>
+      <div class="h-full w-1/2 hidden md:block md:bg-gradient-to-r from-[#5580E9B3] 2xl:from-[#5580E9FF] 2xl:via-[#5580E9B3] "></div>
+      <div class="w-full h-1/2 md:hidden bg-gradient-to-b from-[#5580E9FF] via-[#5580E9FF] to-[#5580E9B3]"></div>
+      <div class="w-full h-1/2 md:hidden bg-gradient-to-b from-[#5580E9B3]"></div>
+    </div>
+    <div class="absolute top-0 left-0 h-full w-full">
+      <div class="flex flex-col h-full justify-center mx-10 lg:mx-24 text-white">
+        <div class="text-2xl">ВятГУ</div>
+        <div class="text-4xl mt-3">Автошкола Вятского <br/> Государственного Университета</div>
+        <div class="text-lg mt-10">Удобная форма обучения и оплата в рассрочку без %</div>
+        <div class="flex justify-center items-center border rounded-xl bg-white text-[#597EE7] text-2xl font-bold mt-14 px-16 py-3 w-fit">
+          <div>Записаться</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>
