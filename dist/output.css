@@ -575,14 +575,6 @@ video {
   margin: 1px;
 }
 
-.m-\[4px\] {
-  margin: 4px;
-}
-
-.m-\[2px\] {
-  margin: 2px;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -613,28 +605,28 @@ video {
   margin-top: 3.5rem;
 }
 
-.mt-24 {
-  margin-top: 6rem;
-}
-
 .mt-20 {
   margin-top: 5rem;
-}
-
-.ml-16 {
-  margin-left: 4rem;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
 }
 
 .ml-6 {
   margin-left: 1.5rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
 .flex {
   display: flex;
+}
+
+.list-item {
+  display: list-item;
 }
 
 .hidden {
@@ -681,18 +673,6 @@ video {
   list-style-position: inside;
 }
 
-.list-outside {
-  list-style-position: outside;
-}
-
-.list-disc {
-  list-style-type: disc;
-}
-
-.list-none {
-  list-style-type: none;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -709,22 +689,10 @@ video {
   justify-content: space-between;
 }
 
-.space-x-10 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-y-10 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
-}
-
-.space-y-1 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -742,28 +710,8 @@ video {
   border-top-right-radius: 0.75rem;
 }
 
-.rounded-t-2xl {
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-}
-
-.rounded-t-lg {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-}
-
 .border {
   border-width: 1px;
-}
-
-.border-red-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(220 38 38 / var(--tw-border-opacity));
-}
-
-.border-slate-900 {
-  --tw-border-opacity: 1;
-  border-color: rgb(15 23 42 / var(--tw-border-opacity));
 }
 
 .bg-white {
@@ -834,26 +782,6 @@ video {
           background-clip: text;
 }
 
-.p-5 {
-  padding: 1.25rem;
-}
-
-.p-\[1px\] {
-  padding: 1px;
-}
-
-.p-\[2px\] {
-  padding: 2px;
-}
-
-.p-\[4px\] {
-  padding: 4px;
-}
-
-.p-6 {
-  padding: 1.5rem;
-}
-
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -867,11 +795,6 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
 }
 
 .pl-5 {
@@ -890,6 +813,22 @@ video {
   text-indent: 1.5rem;
 }
 
+.indent-10 {
+  text-indent: 2.5rem;
+}
+
+.indent-4 {
+  text-indent: 1rem;
+}
+
+.indent-2 {
+  text-indent: 0.5rem;
+}
+
+.indent-1 {
+  text-indent: 0.25rem;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -905,10 +844,6 @@ video {
   line-height: 1.25rem;
 }
 
-.text-\[32px\] {
-  font-size: 32px;
-}
-
 .text-\[20px\] {
   font-size: 20px;
 }
@@ -918,26 +853,16 @@ video {
   line-height: 1.75rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-\[27px\] {
-  font-size: 27px;
-}
-
 .font-semibold {
   font-weight: 600;
 }
 
 .font-bold {
   font-weight: 700;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
 }
 
 .text-transparent {
@@ -968,111 +893,24 @@ video {
   margin: 2.5rem;
 }
 
+.marker\:m-4 *::marker {
+  margin: 1rem;
+}
+
 .marker\:mr-4 *::marker {
   margin-right: 1rem;
 }
 
-.marker\:mr-\[-4rem\] *::marker {
-  margin-right: -4rem;
+.marker\:h-10 *::marker {
+  height: 2.5rem;
 }
 
-.marker\:ml-\[-4rem\] *::marker {
-  margin-left: -4rem;
-}
-
-.marker\:mr-10 *::marker {
-  margin-right: 2.5rem;
-}
-
-.marker\:ml-10 *::marker {
-  margin-left: 2.5rem;
-}
-
-.marker\:bg-gradient-to-r *::marker {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.marker\:from-\[\#5580E9\] *::marker {
-  --tw-gradient-from: #5580E9;
-  --tw-gradient-to: rgb(85 128 233 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.marker\:to-\[\#8961D1\] *::marker {
-  --tw-gradient-to: #8961D1;
-}
-
-.marker\:bg-clip-text *::marker {
-  -webkit-background-clip: text;
-          background-clip: text;
-}
-
-.marker\:p-4 *::marker {
-  padding: 1rem;
+.marker\:w-10 *::marker {
+  width: 2.5rem;
 }
 
 .marker\:pr-4 *::marker {
   padding-right: 1rem;
-}
-
-.marker\:pr-2 *::marker {
-  padding-right: 0.5rem;
-}
-
-.marker\:pr-10 *::marker {
-  padding-right: 2.5rem;
-}
-
-.marker\:pl-10 *::marker {
-  padding-left: 2.5rem;
-}
-
-.marker\:text-3xl *::marker {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.marker\:text-xl *::marker {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.marker\:text-2xl *::marker {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.marker\:text-sky-600 *::marker {
-  color: rgb(2 132 199 );
-}
-
-.marker\:text-transparent *::marker {
-  color: transparent;
-}
-
-.marker\:content-\[123123123\] *::marker {
-  --tw-content: 123123123;
-  content: var(--tw-content);
-}
-
-.marker\:content-\[\'1231312\'\] *::marker {
-  --tw-content: '1231312';
-  content: var(--tw-content);
-}
-
-.marker\:content-\[\] *::marker {
-  --tw-content: ;
-  content: var(--tw-content);
-}
-
-.marker\:content-\[url\(\.\.\/\.\.\/\.\.\/\.\.\/assets\/marker\.svg\)\] *::marker {
-  --tw-content: url(../../../../assets/marker.svg);
-  content: var(--tw-content);
-}
-
-.marker\:content-\[url\(\/\.\.\/assets\/marker\.svg\)\] *::marker {
-  --tw-content: url(/../assets/marker.svg);
-  content: var(--tw-content);
 }
 
 .marker\:content-\[url\(\.\/\.\.\/assets\/marker\.svg\)\] *::marker {
@@ -1080,8 +918,8 @@ video {
   content: var(--tw-content);
 }
 
-.marker\:content-\[\'xxx\'\] *::marker {
-  --tw-content: 'xxx';
+.marker\:content-\[url\(\.\/\.\.\/assets\/marker-sm\.svg\)\] *::marker {
+  --tw-content: url(./../assets/marker-sm.svg);
   content: var(--tw-content);
 }
 
@@ -1089,111 +927,24 @@ video {
   margin: 2.5rem;
 }
 
+.marker\:m-4::marker {
+  margin: 1rem;
+}
+
 .marker\:mr-4::marker {
   margin-right: 1rem;
 }
 
-.marker\:mr-\[-4rem\]::marker {
-  margin-right: -4rem;
+.marker\:h-10::marker {
+  height: 2.5rem;
 }
 
-.marker\:ml-\[-4rem\]::marker {
-  margin-left: -4rem;
-}
-
-.marker\:mr-10::marker {
-  margin-right: 2.5rem;
-}
-
-.marker\:ml-10::marker {
-  margin-left: 2.5rem;
-}
-
-.marker\:bg-gradient-to-r::marker {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.marker\:from-\[\#5580E9\]::marker {
-  --tw-gradient-from: #5580E9;
-  --tw-gradient-to: rgb(85 128 233 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.marker\:to-\[\#8961D1\]::marker {
-  --tw-gradient-to: #8961D1;
-}
-
-.marker\:bg-clip-text::marker {
-  -webkit-background-clip: text;
-          background-clip: text;
-}
-
-.marker\:p-4::marker {
-  padding: 1rem;
+.marker\:w-10::marker {
+  width: 2.5rem;
 }
 
 .marker\:pr-4::marker {
   padding-right: 1rem;
-}
-
-.marker\:pr-2::marker {
-  padding-right: 0.5rem;
-}
-
-.marker\:pr-10::marker {
-  padding-right: 2.5rem;
-}
-
-.marker\:pl-10::marker {
-  padding-left: 2.5rem;
-}
-
-.marker\:text-3xl::marker {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.marker\:text-xl::marker {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.marker\:text-2xl::marker {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.marker\:text-sky-600::marker {
-  color: rgb(2 132 199 );
-}
-
-.marker\:text-transparent::marker {
-  color: transparent;
-}
-
-.marker\:content-\[123123123\]::marker {
-  --tw-content: 123123123;
-  content: var(--tw-content);
-}
-
-.marker\:content-\[\'1231312\'\]::marker {
-  --tw-content: '1231312';
-  content: var(--tw-content);
-}
-
-.marker\:content-\[\]::marker {
-  --tw-content: ;
-  content: var(--tw-content);
-}
-
-.marker\:content-\[url\(\.\.\/\.\.\/\.\.\/\.\.\/assets\/marker\.svg\)\]::marker {
-  --tw-content: url(../../../../assets/marker.svg);
-  content: var(--tw-content);
-}
-
-.marker\:content-\[url\(\/\.\.\/assets\/marker\.svg\)\]::marker {
-  --tw-content: url(/../assets/marker.svg);
-  content: var(--tw-content);
 }
 
 .marker\:content-\[url\(\.\/\.\.\/assets\/marker\.svg\)\]::marker {
@@ -1201,9 +952,59 @@ video {
   content: var(--tw-content);
 }
 
-.marker\:content-\[\'xxx\'\]::marker {
-  --tw-content: 'xxx';
+.marker\:content-\[url\(\.\/\.\.\/assets\/marker-sm\.svg\)\]::marker {
+  --tw-content: url(./../assets/marker-sm.svg);
   content: var(--tw-content);
+}
+
+.before\:marker\:mr-4 *::before::marker {
+  content: var(--tw-content);
+  margin-right: 1rem;
+}
+
+.marker\:before\:mr-4 *::before,::marker {
+  content: var(--tw-content);
+  margin-right: 1rem;
+}
+
+.marker\:before\:pr-10 *::before,::marker {
+  content: var(--tw-content);
+  padding-right: 2.5rem;
+}
+
+.marker\:before\:pr-6 *::before,::marker {
+  content: var(--tw-content);
+  padding-right: 1.5rem;
+}
+
+.marker\:before\:pr-4 *::before,::marker {
+  content: var(--tw-content);
+  padding-right: 1rem;
+}
+
+.before\:marker\:mr-4::before::marker {
+  content: var(--tw-content);
+  margin-right: 1rem;
+}
+
+.marker\:before\:mr-4::marker::before {
+  content: var(--tw-content);
+  margin-right: 1rem;
+}
+
+.marker\:before\:pr-10::marker::before {
+  content: var(--tw-content);
+  padding-right: 2.5rem;
+}
+
+.marker\:before\:pr-6::marker::before {
+  content: var(--tw-content);
+  padding-right: 1.5rem;
+}
+
+.marker\:before\:pr-4::marker::before {
+  content: var(--tw-content);
+  padding-right: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -1236,16 +1037,16 @@ video {
     justify-content: center;
   }
 
-  .md\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
-    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:bg-gradient-to-r {
@@ -1257,24 +1058,20 @@ video {
     padding-right: 6rem;
   }
 
-  .md\:indent-16 {
-    text-indent: 4rem;
+  .md\:pl-10 {
+    padding-left: 2.5rem;
   }
 
-  .md\:indent-12 {
-    text-indent: 3rem;
+  .md\:indent-14 {
+    text-indent: 3.5rem;
   }
 
   .md\:indent-10 {
     text-indent: 2.5rem;
   }
 
-  .md\:indent-6 {
-    text-indent: 1.5rem;
-  }
-
-  .md\:indent-14 {
-    text-indent: 3.5rem;
+  .md\:indent-8 {
+    text-indent: 2rem;
   }
 
   .md\:text-2xl {
@@ -1298,6 +1095,26 @@ video {
 
   .md\:text-\[27px\] {
     font-size: 27px;
+  }
+
+  .md\:marker\:content-\[url\(\.\/\.\.\/assets\/marker\.svg\)\] *::marker {
+    --tw-content: url(./../assets/marker.svg);
+    content: var(--tw-content);
+  }
+
+  .md\:marker\:content-\[url\(\.\/\.\.\/assets\/marker\.svg\)\]::marker {
+    --tw-content: url(./../assets/marker.svg);
+    content: var(--tw-content);
+  }
+
+  .md\:marker\:before\:pr-6 *::before,::marker {
+    content: var(--tw-content);
+    padding-right: 1.5rem;
+  }
+
+  .md\:marker\:before\:pr-6::marker::before {
+    content: var(--tw-content);
+    padding-right: 1.5rem;
   }
 }
 
