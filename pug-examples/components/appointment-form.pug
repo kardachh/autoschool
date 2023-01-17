@@ -1,0 +1,26 @@
+div(class="mx-auto w-full lg:container px-10 lg:px-24 mt-10 mb-10")
+    div(class="text-[20px] md:text-[32px] font-semibold") Запись
+    div(class="mt-5 md:mt-10 text-[#4B4B4B] text-sm md:text-lg") Пожалуйста, внимательно заполните форму, чтобы мы как можно быстрее с Вами связались.
+
+    form(class="mt-4 space-y-4")
+        div()    
+            label(class="font-medium text-base md:text-lg") ФИО
+            br
+            div(class="bg-gradient-to-r from-[#5580E9] to-[#8961D1] mt-1 md:mt-3 p-[1.5px] rounded-xl")
+                input( type="input" name="FIO" class="w-full border rounded-xl py-2 pl-4 ")
+        div()    
+            label(class="font-medium text-base md:text-lg") Телефон
+            br
+            div(class="bg-gradient-to-r from-[#5580E9] to-[#8961D1] mt-1 md:mt-3 p-[1.5px] rounded-xl")
+                input( type="input" name="phone" class="w-full border rounded-xl py-2 pl-4 ")
+        div()    
+            label(class="font-medium text-base md:text-lg") Электронная почта
+            br
+            div(class="bg-gradient-to-r from-[#5580E9] to-[#8961D1] mt-1 md:mt-3 p-[1.5px] rounded-xl")
+                input( type="input" name="email" class="w-full border rounded-xl py-2 pl-4 ")
+        div(class="flex")
+            div(class="bg-gradient-to-r from-[#5580E9] to-[#8961D1] rounded-md p-[1.25px] w-fit h-fit leading-3")
+                input(type="checkbox" class="rounded-md checked:bg-transparent")
+            label(for="" class="ml-3") Я внимательно ознакомился и согласен с Политикой конфиденциальности
+        div()
+            div(class="w-full text-center bg-gradient-to-r from-[#5580E9] to-[#8961D1] rounded-xl text-white p-2 text-base md:text-lg font-semibold") ОТПРАВИТЬ
