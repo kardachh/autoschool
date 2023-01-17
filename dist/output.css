@@ -567,62 +567,6 @@ video {
   left: 0px;
 }
 
-.left-2 {
-  left: 0.5rem;
-}
-
-.left-3 {
-  left: 0.75rem;
-}
-
-.left-4 {
-  left: 1rem;
-}
-
-.left-\[3\.5rem\] {
-  left: 3.5rem;
-}
-
-.left-\[1rem\] {
-  left: 1rem;
-}
-
-.left-\[0\.75rem\] {
-  left: 0.75rem;
-}
-
-.left-\[0\.8rem\] {
-  left: 0.8rem;
-}
-
-.left-\[0\.9rem\] {
-  left: 0.9rem;
-}
-
-.top-1 {
-  top: 0.25rem;
-}
-
-.top-2 {
-  top: 0.5rem;
-}
-
-.top-3 {
-  top: 0.75rem;
-}
-
-.top-10 {
-  top: 2.5rem;
-}
-
-.top-8 {
-  top: 2rem;
-}
-
-.top-7 {
-  top: 1.75rem;
-}
-
 .top-4 {
   top: 1rem;
 }
@@ -681,24 +625,8 @@ video {
   margin-top: 0.25rem;
 }
 
-.ml-4 {
-  margin-left: 1rem;
-}
-
 .mb-10 {
   margin-bottom: 2.5rem;
-}
-
-.mt-9 {
-  margin-top: 2.25rem;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
-}
-
-.ml-5 {
-  margin-left: 1.25rem;
 }
 
 .mt-4 {
@@ -709,24 +637,28 @@ video {
   margin-top: 0.5rem;
 }
 
-.ml-3 {
-  margin-left: 0.75rem;
-}
-
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
 }
 
 .mt-6 {
   margin-top: 1.5rem;
 }
 
-.mt-11 {
-  margin-top: 2.75rem;
-}
-
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.mt-11 {
+  margin-top: 2.75rem;
 }
 
 .flex {
@@ -735,10 +667,6 @@ video {
 
 .grid {
   display: grid;
-}
-
-.list-item {
-  display: list-item;
 }
 
 .hidden {
@@ -765,12 +693,12 @@ video {
   height: 50%;
 }
 
-.h-96 {
-  height: 24rem;
-}
-
 .h-\[25px\] {
   height: 25px;
+}
+
+.h-\[calc\(100\%_\+_2\.25rem\)\] {
+  height: calc(100% + 2.25rem);
 }
 
 .h-\[80px\] {
@@ -781,30 +709,6 @@ video {
   height: 20px;
 }
 
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-0 {
-  height: 0px;
-}
-
-.h-\[calc\(100\%_\+_2\.5rem\)\] {
-  height: calc(100% + 2.5rem);
-}
-
-.h-\[calc\(100\%_\+_2\.25rem\)\] {
-  height: calc(100% + 2.25rem);
-}
-
-.h-\[calc\(100\%_\+_2rem\)\] {
-  height: calc(100% + 2rem);
-}
-
-.h-\[calc\(100\%_\+_1\.75rem\)\] {
-  height: calc(100% + 1.75rem);
-}
-
 .w-full {
   width: 100%;
 }
@@ -813,44 +717,12 @@ video {
   width: 50%;
 }
 
-.w-\[120\%\] {
-  width: 120%;
-}
-
-.w-\[140\%\] {
-  width: 140%;
-}
-
-.w-\[150\%\] {
-  width: 150%;
-}
-
-.w-\[calc\(100\%_\+_16rem\)\] {
-  width: calc(100% + 16rem);
-}
-
-.w-\[calc\(100\%_\+_4rem\)\] {
-  width: calc(100% + 4rem);
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
 
 .list-inside {
   list-style-position: inside;
-}
-
-.grid-flow-row {
-  grid-auto-flow: row;
-}
-
-.grid-flow-col {
-  grid-auto-flow: column;
-}
-
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .grid-cols-1 {
@@ -873,18 +745,14 @@ video {
   justify-content: space-between;
 }
 
-.gap-16 {
-  gap: 4rem;
-}
-
 .gap-10 {
   gap: 2.5rem;
 }
 
-.space-y-10 > :not([hidden]) ~ :not([hidden]) {
+.space-y-7 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
-  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+  margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -897,18 +765,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
-}
-
-.space-y-7 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
-}
-
-.space-x-16 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(4rem * var(--tw-space-x-reverse));
-  margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-10 > :not([hidden]) ~ :not([hidden]) {
@@ -934,18 +790,8 @@ video {
   border-width: 1px;
 }
 
-.border-red-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
-}
-
 .border-\[\#5580E9B2\] {
   border-color: #5580E9B2;
-}
-
-.border-red-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(248 113 113 / var(--tw-border-opacity));
 }
 
 .bg-white {
@@ -1044,32 +890,12 @@ video {
   padding-left: 1.25rem;
 }
 
-.pl-4 {
-  padding-left: 1rem;
-}
-
 .pl-10 {
   padding-left: 2.5rem;
 }
 
 .text-center {
   text-align: center;
-}
-
-.indent-6 {
-  text-indent: 1.5rem;
-}
-
-.indent-10 {
-  text-indent: 2.5rem;
-}
-
-.indent-4 {
-  text-indent: 1rem;
-}
-
-.indent-2 {
-  text-indent: 0.5rem;
 }
 
 .indent-1 {
@@ -1148,18 +974,6 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.marker\:m-10 *::marker {
-  margin: 2.5rem;
-}
-
-.marker\:m-4 *::marker {
-  margin: 1rem;
-}
-
-.marker\:mr-4 *::marker {
-  margin-right: 1rem;
-}
-
 .marker\:h-10 *::marker {
   height: 2.5rem;
 }
@@ -1168,30 +982,19 @@ video {
   width: 2.5rem;
 }
 
-.marker\:pr-4 *::marker {
-  padding-right: 1rem;
-}
-
-.marker\:content-\[url\(\.\/\.\.\/assets\/marker\.svg\)\] *::marker {
-  --tw-content: url(./../assets/marker.svg);
-  content: var(--tw-content);
-}
-
 .marker\:content-\[url\(\.\/\.\.\/assets\/marker-sm\.svg\)\] *::marker {
   --tw-content: url(./../assets/marker-sm.svg);
   content: var(--tw-content);
 }
 
-.marker\:m-10::marker {
-  margin: 2.5rem;
+.marker\:content-\[url\(\'\.\/assets\/marker-sm\.svg\'\)\] *::marker {
+  --tw-content: url('./assets/marker-sm.svg');
+  content: var(--tw-content);
 }
 
-.marker\:m-4::marker {
-  margin: 1rem;
-}
-
-.marker\:mr-4::marker {
-  margin-right: 1rem;
+.marker\:content-\[url\(\'\.\/\.\.\/assets\/marker-sm\.svg\'\)\] *::marker {
+  --tw-content: url('./../assets/marker-sm.svg');
+  content: var(--tw-content);
 }
 
 .marker\:h-10::marker {
@@ -1202,63 +1005,24 @@ video {
   width: 2.5rem;
 }
 
-.marker\:pr-4::marker {
-  padding-right: 1rem;
-}
-
-.marker\:content-\[url\(\.\/\.\.\/assets\/marker\.svg\)\]::marker {
-  --tw-content: url(./../assets/marker.svg);
-  content: var(--tw-content);
-}
-
 .marker\:content-\[url\(\.\/\.\.\/assets\/marker-sm\.svg\)\]::marker {
   --tw-content: url(./../assets/marker-sm.svg);
   content: var(--tw-content);
 }
 
-.before\:marker\:mr-4 *::before::marker {
+.marker\:content-\[url\(\'\.\/assets\/marker-sm\.svg\'\)\]::marker {
+  --tw-content: url('./assets/marker-sm.svg');
   content: var(--tw-content);
-  margin-right: 1rem;
 }
 
-.marker\:before\:mr-4 *::before,::marker {
+.marker\:content-\[url\(\'\.\/\.\.\/assets\/marker-sm\.svg\'\)\]::marker {
+  --tw-content: url('./../assets/marker-sm.svg');
   content: var(--tw-content);
-  margin-right: 1rem;
-}
-
-.marker\:before\:pr-10 *::before,::marker {
-  content: var(--tw-content);
-  padding-right: 2.5rem;
-}
-
-.marker\:before\:pr-6 *::before,::marker {
-  content: var(--tw-content);
-  padding-right: 1.5rem;
 }
 
 .marker\:before\:pr-4 *::before,::marker {
   content: var(--tw-content);
   padding-right: 1rem;
-}
-
-.before\:marker\:mr-4::before::marker {
-  content: var(--tw-content);
-  margin-right: 1rem;
-}
-
-.marker\:before\:mr-4::marker::before {
-  content: var(--tw-content);
-  margin-right: 1rem;
-}
-
-.marker\:before\:pr-10::marker::before {
-  content: var(--tw-content);
-  padding-right: 2.5rem;
-}
-
-.marker\:before\:pr-6::marker::before {
-  content: var(--tw-content);
-  padding-right: 1.5rem;
 }
 
 .marker\:before\:pr-4::marker::before {
@@ -1271,32 +1035,16 @@ video {
     position: static;
   }
 
-  .md\:left-4 {
-    left: 1rem;
-  }
-
-  .md\:top-0 {
-    top: 0px;
-  }
-
   .md\:top-auto {
     top: auto;
   }
 
-  .md\:top-full {
-    top: 100%;
+  .md\:left-4 {
+    left: 1rem;
   }
 
   .md\:mt-0 {
     margin-top: 0px;
-  }
-
-  .md\:ml-16 {
-    margin-left: 4rem;
-  }
-
-  .md\:ml-5 {
-    margin-left: 1.25rem;
   }
 
   .md\:mt-10 {
@@ -1307,20 +1055,20 @@ video {
     margin-top: 2.25rem;
   }
 
-  .md\:ml-3 {
-    margin-left: 0.75rem;
+  .md\:ml-16 {
+    margin-left: 4rem;
   }
 
   .md\:mb-10 {
     margin-bottom: 2.5rem;
   }
 
-  .md\:mt-5 {
-    margin-top: 1.25rem;
+  .md\:ml-3 {
+    margin-left: 0.75rem;
   }
 
-  .md\:mt-3 {
-    margin-top: 0.75rem;
+  .md\:mt-5 {
+    margin-top: 1.25rem;
   }
 
   .md\:block {
@@ -1352,18 +1100,6 @@ video {
     width: calc(100% + 4rem);
   }
 
-  .md\:w-\[calc\(100\%_\+_4em\)\] {
-    width: calc(100% + 4em);
-  }
-
-  .md\:w-\[calc\(100\%_\+_2\.5rem\)\] {
-    width: calc(100% + 2.5rem);
-  }
-
-  .md\:w-\[calc\(100\%_\+_3rem\)\] {
-    width: calc(100% + 3rem);
-  }
-
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -1390,12 +1126,6 @@ video {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
-  .md\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
-    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   .md\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(1.5rem * var(--tw-space-x-reverse));
@@ -1416,20 +1146,8 @@ video {
     padding-bottom: 1rem;
   }
 
-  .md\:pl-10 {
-    padding-left: 2.5rem;
-  }
-
   .md\:pl-0 {
     padding-left: 0px;
-  }
-
-  .md\:indent-14 {
-    text-indent: 3.5rem;
-  }
-
-  .md\:indent-10 {
-    text-indent: 2.5rem;
   }
 
   .md\:indent-8 {
@@ -1464,8 +1182,38 @@ video {
     line-height: 1.25rem;
   }
 
+  .md\:marker\:content-\[url\(\.\/assets\/marker\.svg\)\] *::marker {
+    --tw-content: url(./assets/marker.svg);
+    content: var(--tw-content);
+  }
+
+  .md\:marker\:content-\[url\(\'\.\/assets\/marker\.svg\'\)\] *::marker {
+    --tw-content: url('./assets/marker.svg');
+    content: var(--tw-content);
+  }
+
+  .md\:marker\:content-\[url\(\'\.\/\.\.\/assets\/marker\.svg\'\)\] *::marker {
+    --tw-content: url('./../assets/marker.svg');
+    content: var(--tw-content);
+  }
+
   .md\:marker\:content-\[url\(\.\/\.\.\/assets\/marker\.svg\)\] *::marker {
     --tw-content: url(./../assets/marker.svg);
+    content: var(--tw-content);
+  }
+
+  .md\:marker\:content-\[url\(\.\/assets\/marker\.svg\)\]::marker {
+    --tw-content: url(./assets/marker.svg);
+    content: var(--tw-content);
+  }
+
+  .md\:marker\:content-\[url\(\'\.\/assets\/marker\.svg\'\)\]::marker {
+    --tw-content: url('./assets/marker.svg');
+    content: var(--tw-content);
+  }
+
+  .md\:marker\:content-\[url\(\'\.\/\.\.\/assets\/marker\.svg\'\)\]::marker {
+    --tw-content: url('./../assets/marker.svg');
     content: var(--tw-content);
   }
 
