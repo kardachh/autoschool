@@ -1197,6 +1197,11 @@ video {
     content: var(--tw-content);
   }
 
+  .md\:marker\:content-\[url\(\.\/\.\.\/assets\/marker\.svg\)\] *::marker {
+    --tw-content: url(./../assets/marker.svg);
+    content: var(--tw-content);
+  }
+
   .md\:marker\:content-\[url\(\.\/assets\/marker\.svg\)\]::marker {
     --tw-content: url(./assets/marker.svg);
     content: var(--tw-content);
@@ -1209,6 +1214,11 @@ video {
 
   .md\:marker\:content-\[url\(\'\.\/\.\.\/assets\/marker\.svg\'\)\]::marker {
     --tw-content: url('./../assets/marker.svg');
+    content: var(--tw-content);
+  }
+
+  .md\:marker\:content-\[url\(\.\/\.\.\/assets\/marker\.svg\)\]::marker {
+    --tw-content: url(./../assets/marker.svg);
     content: var(--tw-content);
   }
 
