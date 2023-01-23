@@ -840,10 +840,6 @@ select {
   margin-top: 2.75rem;
 }
 
-.mr-3 {
-  margin-right: 0.75rem;
-}
-
 .flex {
   display: flex;
 }
@@ -884,13 +880,13 @@ select {
   height: calc(100% + 2.25rem);
 }
 
+.h-\[80px\] {
+  height: 80px;
+}
+
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
-}
-
-.h-\[80px\] {
-  height: 80px;
 }
 
 .h-\[20px\] {
@@ -928,10 +924,6 @@ select {
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1458,12 +1450,12 @@ select {
     line-height: 1.25rem;
   }
 
-  .md\:text-\[22px\] {
-    font-size: 22px;
-  }
-
   .md\:text-\[20px\] {
     font-size: 20px;
+  }
+
+  .md\:text-\[22px\] {
+    font-size: 22px;
   }
 
   .md\:marker\:content-\[url\(\.\/\.\.\/assets\/marker\.svg\)\] *::marker {

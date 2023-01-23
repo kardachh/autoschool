@@ -1,9 +1,15 @@
-- const arr = [{name:"Правила дорожного движения", img:"./../assets/book.svg"},{name:"Основы безопасности дорожного движения", img:"./../assets/car.svg"},{name:"Техническое устройство автомобиля", img:"./../assets/repair-tools.svg"},{name:"Оказание первой медицинской помощи", img:"./../assets/medicine.svg"}]
+- 
+    const arrTheory = [
+        {name:"Правила дорожного движения", img:"./../assets/theory/book.svg"},
+        {name:"Основы безопасности дорожного движения", img:"./../assets/theory/car.svg"},
+        {name:"Техническое устройство автомобиля", img:"./../assets/theory/repair-tools.svg"},
+        {name:"Оказание первой медицинской помощи", img:"./../assets/theory/medicine.svg"}
+    ]
 
 div(class="mx-auto w-full lg:container px-10 lg:px-24 mt-20")
     div(class="text-[20px] md:text-[32px] font-semibold") Содержание теоретического курса
     div(class="grid grid-cols-1 md:grid-cols-2 gap-4")
-        each val in arr 
+        each val in arrTheory 
             div(class="flex items-center mt-5 md:mt-10")
                 img(src=`${val.img}` class="h-[80px] md:h-[100px]")
                 div(class="text-sm md:text-[20px] ml-3")=val.name
