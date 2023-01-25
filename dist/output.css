@@ -713,10 +713,6 @@ select {
   }
 }
 
-.static {
-  position: static;
-}
-
 .\!static {
   position: static !important;
 }
@@ -900,6 +896,10 @@ select {
   height: 200px;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
@@ -909,24 +909,12 @@ select {
   height: 20px;
 }
 
-.h-auto {
-  height: auto;
+.min-h-\[100px\] {
+  min-height: 100px;
 }
 
 .min-h-\[300px\] {
   min-height: 300px;
-}
-
-.min-h-\[200px\] {
-  min-height: 200px;
-}
-
-.min-h-\[150px\] {
-  min-height: 150px;
-}
-
-.min-h-\[100px\] {
-  min-height: 100px;
 }
 
 .w-full {
@@ -937,14 +925,14 @@ select {
   width: 50%;
 }
 
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
 .\!w-fit {
   width: -moz-fit-content !important;
   width: fit-content !important;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .cursor-pointer {
@@ -963,6 +951,10 @@ select {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -977,10 +969,6 @@ select {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
 }
 
 .gap-10 {
@@ -1162,20 +1150,20 @@ select {
           background-clip: text;
 }
 
-.p-\[1\.5px\] {
-  padding: 1.5px;
-}
-
-.p-\[1\.25px\] {
-  padding: 1.25px;
+.p-3 {
+  padding: 0.75rem;
 }
 
 .p-2 {
   padding: 0.5rem;
 }
 
-.p-3 {
-  padding: 0.75rem;
+.p-\[1\.5px\] {
+  padding: 1.5px;
+}
+
+.p-\[1\.25px\] {
+  padding: 1.25px;
 }
 
 .px-10 {
@@ -1307,10 +1295,6 @@ select {
   color: rgb(75 75 75 / var(--tw-text-opacity));
 }
 
-.text-\[\#\#5580E9\] {
-  color: ##5580E9;
-}
-
 .drop-shadow-\[0_4px_20px_rgba\(0\2c 0\2c 0\2c 0\.15\)\] {
   --tw-drop-shadow: drop-shadow(0 4px 20px rgba(0,0,0,0.15));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1414,6 +1398,10 @@ select {
     margin-top: 0.75rem;
   }
 
+  .md\:mt-8 {
+    margin-top: 2rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1440,10 +1428,6 @@ select {
 
   .md\:h-\[250px\] {
     height: 250px;
-  }
-
-  .md\:min-h-\[200px\] {
-    min-height: 200px;
   }
 
   .md\:min-h-\[150px\] {
