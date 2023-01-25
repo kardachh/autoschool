@@ -5,441 +5,457 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="stylesheet" href="./dist/output.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   </head>
-  <div class="fixed z-50 top-0 h-[70px] lg:h-[100px] w-full flex items-center bg-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.15)]">
-    <div class="container mx-auto px-10 lg:px-24 flex justify-between items-center" id="top-bar">
-      <div class="flex items-center"><img class="h-[40px] lg:h-auto" src="./assets/icon.svg">
-        <div class="pl-5">
+  <body style="font-family: 'Montserrat'">
+    <div class="fixed z-50 top-0 h-[70px] lg:h-[100px] w-full flex items-center bg-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.15)]">
+      <div class="container mx-auto px-10 lg:px-24 flex justify-between items-center" id="top-bar">
+        <div class="flex items-center"><img class="h-[40px] lg:h-auto" src="./assets/icon.svg">
+          <div class="pl-5">
+            <div class="text-base lg:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-[#5580E9] to-[#8961D1] font-semibold">Автошкола ВятГУ</div>
+          </div>
+        </div>
+        <div class="hidden lg:flex lg:space-x-8"><a class="text-base font-semibold" href="/">Обучение</a><a class="text-base font-semibold" href="/">Информация</a><a class="text-base font-semibold" href="/">Отзывы</a><a class="text-base font-semibold" href="/">Галерея</a></div>
+        <div class="lg:hidden cursor-pointer" id="top-bar-menu-open"><img src="./assets/burger.svg"></div>
+      </div>
+    </div>
+    <div class="mx-auto mt-[70px] lg:mt-[100px] w-full lg:container h-full lg:h-[600px] relative">
+      <div class="h-[350px] md:hidden"></div>
+      <div class="flex flex-col lg:flex-row lg:justify-end h-full"><img src="./assets/woman-traveling-with-her-car.png"></div>
+      <div class="absolute flex flex-col md:flex-row top-0 h-full w-full">
+        <div class="h-full w-1/2 hidden md:block md:bg-gradient-to-r from-[#5580E9FF] via-[#5580E9FF] 2xl:to-[#557fe9FF] to-[#5580E9B3]"></div>
+        <div class="h-full w-1/2 hidden md:block md:bg-gradient-to-r from-[#5580E9B3] 2xl:from-[#5580E9FF] 2xl:via-[#5580E9B3] "></div>
+        <div class="w-full h-1/2 md:hidden bg-gradient-to-b from-[#5580E9FF] via-[#5580E9FF] to-[#5580E9FF]"></div>
+        <div class="w-full h-1/2 md:hidden bg-gradient-to-b from-[#5580E9FF] via-[#5580E9B3]"></div>
+      </div>
+      <div class="absolute top-0 left-0 h-full w-full">
+        <div class="flex flex-col h-full md:justify-center mt-16 md:mt-0  mx-10 lg:mx-24 text-white">
+          <div class="text-base md:text-2xl">ВятГУ</div>
+          <div class="text-xl md:text-4xl mt-3">Автошкола Вятского <br/> Государственного Университета</div>
+          <div class="text-sm md:text-lg mt-10">Удобная форма обучения и оплата в рассрочку без %</div>
+          <div class="flex cursor-pointer justify-center items-center border rounded-xl bg-white text-[#597EE7] text-base md:text-2xl font-bold mt-14  md:px-24 py-4 w-full md:w-fit">
+            <div>Записаться</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mx-auto w-full lg:container px-10 lg:px-24 mt-20">
+      <div class="text-[20px] md:text-[32px] font-semibold">Стоимость</div>
+      <div class="mt-10 flex flex-col md:flex-row space-y-7 md:space-y-0 md:space-x-6">
+        <div class="border bg-gradient-to-r from-[#5580E9] to-[#8961D1] w-full rounded-xl">
+          <div class="bg-white m-[1px] rounded-t-xl py-6"> 
+            <div class="ml-6 lg:ml-16">
+              <div class="text-sm md:text-lg text-[#5580E9]">Услуга</div>
+              <div class="text-base md:text-2xl font-semibold mt-1">Очная форма обучения</div>
+            </div>
+          </div>
+          <div class="ml-6 lg:ml-16 text-white text-lg md:text-[27px] font-semibold py-2 md:py-4">23000 руб.</div>
+        </div>
+        <div class="border bg-gradient-to-r from-[#D0D0D0] to-[#D0D0D0] w-full rounded-xl">
+          <div class="bg-white m-[1px] rounded-t-xl py-6"> 
+            <div class="ml-6 lg:ml-16">
+              <div class="text-sm md:text-lg text-[#5580E9]">Услуга</div>
+              <div class="text-base md:text-2xl font-semibold mt-1">Очная форма обучения</div>
+            </div>
+          </div>
+          <div class="ml-6 lg:ml-16 text-white text-lg md:text-[27px] font-semibold py-2 md:py-4">22000 руб.</div>
+        </div>
+      </div>
+      <div class="mt-10">
+        <ul class="indent-1 md:indent-8 space-y-2 list-inside font-medium text-sm md:text-lg marker:content-[url(./../assets/marker-sm.svg)] md:marker:content-[url(./../assets/marker.svg)] marker:before:pr-4 md:marker:before:pr-6 marker:h-10 marker:w-10 leading-6" role="list">
+          <li>В стоимость входит: теория, автодром, город, ГСМ (бензин), компьютерный класс, школьные экзамены, предоставление автомобиля на экзамен в ГИБДД в составе своей группы.</li>
+          <li>Имеется рассрочка платежа: первоначальный взнос 5000 р., остальные взносы на протяжении всего обучения.</li>
+          <li>Срок обучения: 2,5 - 3,5 месяца.</li>
+          <li>По окончании курсов автошкола предоставляет документы для ИФНС РФ на возмещение НДФЛ (13%) за обучение.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mx-auto w-full lg:container px-10 lg:px-24 mt-10 mb-10">
+      <div class="text-[20px] md:text-[32px] font-semibold">Набор в группы</div>
+      <div class="text-sm md:text-lg font-medium mt-3 md:mt-10">Набор в группы осуществляется ежемесячно</div>
+      <div class="mt-4 md:mt-10 flex flex-col space-y-6">
+        <div>
+          <div class="text-base md:text-2xl font-semibold">Онлайн-обучение</div>
+          <div class="mt-4 md:mt-9 border bg-gradient-to-r from-[#5580E9] to-[#8961D1] w-full rounded-xl">
+            <div class="bg-white m-[1px] rounded-t-xl py-6"> 
+              <div class="ml-6 md:ml-16">
+                <div class="text-[10px] md:text-sm">Онлайн обучение</div>
+                <div class="text-base md:text-lg font-semibold mt-1 text-[#5580E9]">Запись осуществляется в любое время</div>
+              </div>
+            </div>
+            <div class="text-white text-center text-base md:text-lg font-semibold py-2 md:py-4">Записаться</div>
+          </div>
+        </div>
+        <div>
+          <div class="text-base md:text-2xl font-semibold">Очное обучение</div>
+          <div class="text-base md:text-lg font-medium mt-2 mb-5 md:mb-10">Учебный класс (ул.Ленина, 111а)</div>
+          <div class="flex flex-col md:flex-row space-y-7 md:space-y-0 md:space-x-6">
+            <div class=" border bg-gradient-to-r from-[#5580E9] to-[#8961D1] w-full rounded-xl">
+              <div class="bg-white m-[1px] rounded-t-xl py-6"> 
+                <div class="ml-5">
+                  <div class="text-[10px] md:text-sm">Утренние группы</div>
+                  <div class="text-base md:text-lg text-[#5580E9] font-bold">18 января 2023 год</div>
+                  <div class="text-base md:text-lg font-medium mt-1">Организационное собрание</div>
+                  <div class="flex items-center mt-2"><img class="h-[25px] md:h-auto" src="./assets/clock.svg">
+                    <div class="ml-2 md:ml-3 text-base md:text-lg font-semibold">C 10:00</div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-white text-center text-base md:text-lg font-semibold py-2 md:py-4">Записаться</div>
+            </div>
+            <div class="border bg-gradient-to-r from-[#5580E9] to-[#8961D1] w-full rounded-xl">
+              <div class="bg-white m-[1px] rounded-t-xl py-6"> 
+                <div class="ml-5">
+                  <div class="text-[10px] md:text-sm">Вечерние группы</div>
+                  <div class="text-base md:text-lg text-[#5580E9] font-bold">13 декабря 2022 год</div>
+                  <div class="text-base md:text-lg font-medium mt-1">Организационное собрание</div>
+                  <div class="flex items-center mt-2"><img class="h-[25px] md:h-auto" src="./assets/clock.svg">
+                    <div class="ml-2 md:ml-3 text-base md:text-lg font-semibold">C 18:00</div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-white text-center text-base md:text-lg font-semibold py-2 md:py-4">Записаться</div>
+            </div>
+            <div class="border bg-gradient-to-r from-[#5580E9] to-[#8961D1] w-full rounded-xl">
+              <div class="bg-white m-[1px] rounded-t-xl py-6"> 
+                <div class="ml-5">
+                  <div class="text-[10px] md:text-sm">Группы выходного дня</div>
+                  <div class="text-base md:text-lg text-[#5580E9] font-bold">21 января 2023 год</div>
+                  <div class="text-base md:text-lg font-medium mt-1">Организационное собрание</div>
+                  <div class="flex items-center mt-2"><img class="h-[25px] md:h-auto" src="./assets/clock.svg">
+                    <div class="ml-2 md:ml-3 text-base md:text-lg font-semibold">C 10:00</div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-white text-center text-base md:text-lg font-semibold py-2 md:py-4">Записаться</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="text-base md:text-2xl font-semibold">Очное обучение</div>
+          <div class="text-base md:text-lg font-medium mt-2 mb-5 md:mb-10">Учебный класс (Студенческий проезд, 11)</div>
+          <div class="flex flex-col md:flex-row space-y-7 md:space-y-0 md:space-x-6">
+            <div class=" border bg-gradient-to-r from-[#5580E9] to-[#8961D1] w-full rounded-xl">
+              <div class="bg-white m-[1px] rounded-t-xl py-6"> 
+                <div class="ml-5">
+                  <div class="text-[10px] md:text-sm">Вечерние группы</div>
+                  <div class="text-base md:text-lg text-[#5580E9] font-bold">24 января 2023 год</div>
+                  <div class="text-base md:text-lg font-medium mt-1">Организационное собрание</div>
+                  <div class="flex items-center mt-2"><img class="h-[25px] md:h-auto" src="./assets/clock.svg">
+                    <div class="ml-2 md:ml-3 text-base md:text-lg font-semibold">C 18:00</div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-white text-center text-base md:text-lg font-semibold py-2 md:py-4">Записаться</div>
+            </div>
+            <div class="border bg-gradient-to-r from-[#5580E9] to-[#8961D1] w-full rounded-xl">
+              <div class="bg-white m-[1px] rounded-t-xl py-6"> 
+                <div class="ml-5">
+                  <div class="text-[10px] md:text-sm">Группы выходного дня</div>
+                  <div class="text-base md:text-lg text-[#5580E9] font-bold">Нет набора</div>
+                  <div class="text-base md:text-lg font-medium mt-1">Организационное собрание</div>
+                  <div class="flex items-center mt-2"><img class="h-[25px] md:h-auto" src="./assets/clock.svg">
+                    <div class="ml-2 md:ml-3 text-base md:text-lg font-semibold">-</div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-white text-center text-base md:text-lg font-semibold py-2 md:py-4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-6 text-sm md:text-lg leading-8 font-medium">Практические занятия в любой день недели! <br class="hidden md:block"/> Наши мастера инструктора работают в утреннее, дневное, вечернее время, в выходные и праздничные дни.</div>
+    </div>
+    <div class="mx-auto w-full lg:container px-10 lg:px-24 mt-10 mb-10">
+      <div class="text-[20px] md:text-[32px] font-semibold">Права в несколько шагов</div>
+      <div class="mt-5 md:mt-10 grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-16">
+        <div class="relative">
+          <div class="pl-10 md:pl-0 text-base md:text-lg font-semibold">Теория</div>
+          <div class="absolute md:static top-0 h-full md:h-auto md:mt-5 md:flex md:items-center">
+            <div class="md:h-0 border border-[#5580E9B2] bg-[#5580E9B2] absolute h-[calc(100%_+_2.25rem)] md:w-[calc(100%_+_4rem)] top-4 md:top-auto left-[0.85rem] md:left-4"></div><img src="./assets/circles.svg">
+          </div>
+          <div class="pl-10 md:pl-0 mt-3">Первые 2 недели - изучение теории</div>
+        </div>
+        <div class="relative">
+          <div class="pl-10 md:pl-0 text-base md:text-lg font-semibold">Практика</div>
+          <div class="absolute md:static top-0 h-full md:h-auto md:mt-5 md:flex md:items-center">
+            <div class="md:h-0 border border-[#5580E9B2] bg-[#5580E9B2] absolute h-[calc(100%_+_2.25rem)] md:w-[calc(100%_+_4rem)] top-4 md:top-auto left-[0.85rem] md:left-4"></div><img src="./assets/circles.svg">
+          </div>
+          <div class="pl-10 md:pl-0 mt-3">К теории добавляется практика на автодроме и в городе</div>
+        </div>
+        <div class="relative">
+          <div class="pl-10 md:pl-0 text-base md:text-lg font-semibold whitespace-nowrap">Экзамены в автошколе</div>
+          <div class="absolute md:static top-0 h-full md:h-auto md:mt-5 md:flex md:items-center">
+            <div class="md:h-0 border border-[#5580E9B2] bg-[#5580E9B2] absolute h-[calc(100%_+_2.25rem)] md:w-[calc(100%_+_4rem)] top-4 md:top-auto left-[0.85rem] md:left-4"></div><img src="./assets/circles.svg">
+          </div>
+          <div class="pl-10 md:pl-0 mt-3">Сдайте внутренние экзамены по теории и практике</div>
+        </div>
+        <div class="relative">
+          <div class="pl-10 md:pl-0 text-base md:text-lg font-semibold whitespace-nowrap">Экзамены в ГИБДД</div>
+          <div class="absolute md:static top-0 h-full md:h-auto md:mt-5 md:flex md:items-center"><img src="./assets/circles.svg"></div>
+          <div class="pl-10 md:pl-0 mt-3">Сдайте экзамены в ГИБДД и получите водительские права</div>
+        </div>
+      </div>
+    </div>
+    <div class="px-10 lg:px-24 mx-auto container mt-[70px] lg:mt-[100px] ">
+      <div class=" h-full lg:h-[350px] relative rounded-xl overflow-hidden">
+        <div class="hidden lg:flex flex-col lg:flex-row lg:justify-end h-full"><img src="./assets/woman-traveling-with-her-car.png"></div>
+        <div class="absolute flex flex-col md:flex-row top-0 left-0 h-full w-full">
+          <div class="h-full w-1/2 hidden md:block md:bg-gradient-to-r from-[#5580E9FF] via-[#5580E9FF] 2xl:to-[#557fe9FF] to-[#5580E9FF]"></div>
+          <div class="h-full w-1/2 hidden md:block md:bg-gradient-to-r from-[#5580E9FF] 2xl:from-[#5580E9FF] 2xl:via-[#5580E9FF] "></div>
+          <div class="w-full h-full md:hidden bg-gradient-to-r from-[#5580E9] to-[#8961D1]"></div>
+        </div>
+        <div class="relative md:absolute top-0 left-0 h-full w-full font-semibold">
+          <div class="py-8 flex flex-col h-full md:justify-center mt-0 mx-4 md:mx-10 lg:mx-24 text-white">
+            <div class="text-[20px] md:text-[32px] ">Для поступления необходимо:</div>
+            <ol class="mt-5 list-decimal list-inside leading-10 text-sm md:text-lg">
+              <li>Паспорт (копия паспорта: первая страница и прописка)</li>
+              <li>СНИЛС</li>
+              <li>Заявление</li>
+              <li>Медицинская справка формы 003-В/у</li>
+              <li>1 фотография 3х4</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mx-auto w-full lg:container px-10 lg:px-24 mt-20">
+      <div class="text-[20px] md:text-[32px] font-semibold mb-5">Лицензии</div>
+      <div class="grid grid-cols-2 md:grid-cols-4 mt-4 md:mt-8 gap-4"><img src="./assets/obrazec-licenzij-na-obrazovatelnuyu-deyatelnost.jpg"><img src="./assets/obrazec-licenzij-na-obrazovatelnuyu-deyatelnost.jpg"><img src="./assets/obrazec-licenzij-na-obrazovatelnuyu-deyatelnost.jpg"><img src="./assets/obrazec-licenzij-na-obrazovatelnuyu-deyatelnost.jpg">
+      </div>
+    </div>
+    <div class="mx-auto w-full lg:container px-10 lg:px-24 mt-20">
+      <div class="text-[20px] md:text-[32px] font-semibold">Содержание теоретического курса</div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/theory/book.svg">
+          <div class="text-sm md:text-[20px] ml-3">Правила дорожного движения</div>
+        </div>
+        <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/theory/car.svg">
+          <div class="text-sm md:text-[20px] ml-3">Основы безопасности дорожного движения</div>
+        </div>
+        <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/theory/repair-tools.svg">
+          <div class="text-sm md:text-[20px] ml-3">Техническое устройство автомобиля</div>
+        </div>
+        <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/theory/medicine.svg">
+          <div class="text-sm md:text-[20px] ml-3">Оказание первой медицинской помощи</div>
+        </div>
+      </div>
+    </div>
+    <div class="mx-auto w-full lg:container px-10 lg:px-24 mt-20">
+      <div class="text-[20px] md:text-[32px] font-semibold">Вождение на учебном автодроме</div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/practice/garage.svg">
+          <div class="text-sm md:text-[20px] ml-3">Заезд в гараж</div>
+        </div>
+        <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/practice/snake.svg">
+          <div class="text-sm md:text-[20px] ml-3">“Змейка” маневрирование в ограниченном пространстве</div>
+        </div>
+        <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/practice/parallel.svg">
+          <div class="text-sm md:text-[20px] ml-3">Параллельная парковка</div>
+        </div>
+        <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/practice/up-right-arrow.svg">
+          <div class="text-sm md:text-[20px] ml-3">Эстакада (трогание с места в горку)</div>
+        </div>
+        <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/practice/turn-right.svg">
+          <div class="text-sm md:text-[20px] ml-3">Разворот в ограниченном пространстве</div>
+        </div>
+        <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/practice/location.svg">
+          <div class="text-sm md:text-[20px] ml-3">Остановка в заданном месте</div>
+        </div>
+        <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/practice/turn-top.svg">
+          <div class="text-sm md:text-[20px] ml-3">Повороты на 90 градусов</div>
+        </div>
+      </div>
+    </div>
+    <div class="mx-auto w-full lg:container px-10 lg:px-24 mt-20">
+      <div class="text-[20px] md:text-[32px] font-semibold">Вождение на городских маршрутах Кирова, где разрешена учебная езда</div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/routes/road.svg">
+          <div class="text-sm md:text-[20px] ml-3">С малой интенсивностью движения</div>
+        </div>
+        <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/routes/car.svg">
+          <div class="text-sm md:text-[20px] ml-3">Движение в потоке</div>
+        </div>
+      </div>
+    </div>
+    <div class="mx-auto w-full lg:container px-10 lg:px-24 mt-20">
+      <div class="text-[20px] md:text-[32px] font-semibold">Всему этому вас обучат</div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/person.svg">
+          <div class="flex flex-col ml-3">
+            <div class="text-base md:text-[22px] font-semibold">Ванеев Алексей Петрович</div>
+            <div class="text-sm md:text-[20px] mt-2">Текст Текст Текст</div>
+          </div>
+        </div>
+        <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/person.svg">
+          <div class="flex flex-col ml-3">
+            <div class="text-base md:text-[22px] font-semibold">Ванеев Алексей Петрович</div>
+            <div class="text-sm md:text-[20px] mt-2">Текст Текст Текст</div>
+          </div>
+        </div>
+        <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/person.svg">
+          <div class="flex flex-col ml-3">
+            <div class="text-base md:text-[22px] font-semibold">Ванеев Алексей Петрович</div>
+            <div class="text-sm md:text-[20px] mt-2">Текст Текст Текст</div>
+          </div>
+        </div>
+        <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/person.svg">
+          <div class="flex flex-col ml-3">
+            <div class="text-base md:text-[22px] font-semibold">Ванеев Алексей Петрович</div>
+            <div class="text-sm md:text-[20px] mt-2">Текст Текст Текст</div>
+          </div>
+        </div>
+        <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/person.svg">
+          <div class="flex flex-col ml-3">
+            <div class="text-base md:text-[22px] font-semibold">Ванеев Алексей Петрович</div>
+            <div class="text-sm md:text-[20px] mt-2">Текст Текст Текст</div>
+          </div>
+        </div>
+        <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/person.svg">
+          <div class="flex flex-col ml-3">
+            <div class="text-base md:text-[22px] font-semibold">Ванеев Алексей Петрович</div>
+            <div class="text-sm md:text-[20px] mt-2">Текст Текст Текст</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mx-auto w-full lg:container px-10 lg:px-24 mt-20">
+      <div class="text-[20px] md:text-[32px] font-semibold">Наши транспортные средства</div>
+      <div class="mt-5 md:mt-10 grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-10 md:gap-y-16">
+        <div><img class="h-[200px] md:h-[250px] mx-auto" src="./assets/our_cars/car_example1.jpg">
+          <div class="mt-[25px] md:mt-[35px] text-lg font-medium">Текст текст текст</div>
+        </div>
+        <div><img class="h-[200px] md:h-[250px] mx-auto" src="./assets/our_cars/car_example2.jpg">
+          <div class="mt-[25px] md:mt-[35px] text-lg font-medium">Текст текст текст</div>
+        </div>
+        <div><img class="h-[200px] md:h-[250px] mx-auto" src="./assets/our_cars/car_example3.png">
+          <div class="mt-[25px] md:mt-[35px] text-lg font-medium">Текст текст текст</div>
+        </div>
+        <div><img class="h-[200px] md:h-[250px] mx-auto" src="./assets/our_cars/car_example1.jpg">
+          <div class="mt-[25px] md:mt-[35px] text-lg font-medium">Текст текст текст</div>
+        </div>
+        <div><img class="h-[200px] md:h-[250px] mx-auto" src="./assets/our_cars/car_example2.jpg">
+          <div class="mt-[25px] md:mt-[35px] text-lg font-medium">Текст текст текст</div>
+        </div>
+        <div><img class="h-[200px] md:h-[250px] mx-auto" src="./assets/our_cars/car_example3.png">
+          <div class="mt-[25px] md:mt-[35px] text-lg font-medium">Текст текст текст</div>
+        </div>
+      </div>
+    </div>
+    <div class="mx-auto w-full lg:container px-10 lg:px-24 mt-20">
+      <div class="text-[20px] md:text-[32px] font-semibold">Оборудование и техническое средства обучения</div>
+      <ul class="list-disc list-inside font-medium text-base md:text-xl leading-5 mt-5 md:mt-10">
+        <li>Тренажер</li>
+        <li>Детское удерживающее устройство</li>
+        <li>Гибкое связующее звено (буксировочный трос)</li>
+        <li>Тягово - сцепное устройство</li>
+        <li>Компьютер с соответствующим программным обеспечением</li>
+        <li>Мультимедийный проектор</li>
+        <li>Экран (монитор, электронная доска)</li>
+        <li>Магнитная доска со схемой населенного пункта</li>
+      </ul>
+    </div>
+    <div class="mx-auto w-full lg:container px-10 lg:px-24 mt-10 mb-10">
+      <div class="text-[20px] md:text-[32px] font-semibold">Отзывы</div>
+      <div class="mt-5 md:mt-10 swiper w-full">
+        <!--  Additional required wrapper -->
+        <div class="swiper-wrapper min-h-[100px] md:min-h-[150px]">
+          <!--  Slides -->
+          <div class="swiper-slide flex items-center justify-center bg-slate-400 h-auto"> 
+            <div>1</div>
+          </div>
+          <div class="swiper-slide flex items-center justify-center  bg-red-400  h-full"> 
+            <div>2</div>
+          </div>
+          <div class="swiper-slide flex items-center justify-center  bg-green-400  h-full"> 
+            <div>3</div>
+          </div>
+          <div class="swiper-slide flex items-center justify-center  bg-orange-600  h-full"> 
+            <div>4</div>
+          </div>
+          <div class="swiper-slide flex items-center justify-center  bg-teal-500  h-full"> 
+            <div>5</div>
+          </div>
+        </div>
+        <div class="mt-10 flex justify-center items-center">
+          <div class="review-prev font-semibold text-[#5580E9] text-lg"> 
+            <div class="p-3"><</div>
+          </div>
+          <div class="!static !w-fit swiper-pagination"></div>
+          <div class="review-next font-semibold text-[#5580E9] text-lg">
+            <div class="p-3">></div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5 md:mt-10">
+        <div class="w-full text-center bg-gradient-to-r from-[#5580E9] to-[#8961D1] rounded-xl text-white p-2 text-base md:text-lg font-semibold">Читать все отзывы</div>
+      </div>
+    </div>
+    <div class="mx-auto w-full lg:container px-10 lg:px-24 mt-20">
+      <div class="text-[20px] md:text-[32px] font-semibold mb-5">Контакты</div>
+      <div class="flex flex-col md:flex-row justify-between">
+        <ul class="text-sm space-y-3 leading-5 md:text-lg font-medium mb-5">
+          <li class="flex">
+            <div>Телефон </div>
+            <div class="ml-6">8 800 555 35 35</div>
+          </li>
+          <li class="flex">
+            <div>Телефон </div>
+            <div class="ml-6">8 800 555 35 35</div>
+          </li>
+          <li class="flex">
+            <div>Телефон </div>
+            <div class="ml-6">8 800 555 35 35</div>
+          </li>
+        </ul>
+        <div class="w-full md:w-2/3">
+          <iframe class="w-full min-h-[300px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2079.280673682488!2d49.67925401604257!3d58.59079828140649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43fcf4252d7505d5%3A0x7ec7269fe5c330bd!2z0JDQstGC0L7RiNC60L7Qu9CwINCS0Y_RgtCT0KMs0JLRj9GC0YHQutC40Lkg0LPQvtGB0YPQtNCw0YDRgdGC0LLQtdC90L3Ri9C5INGD0L3QuNCy0LXRgNGB0LjRgtC10YI!5e0!3m2!1sru!2sru!4v1673938791776!5m2!1sru!2sru"> </iframe>
+        </div>
+      </div>
+    </div>
+    <div class="mx-auto w-full lg:container px-10 lg:px-24 mt-10 mb-10">
+      <div class="text-[20px] md:text-[32px] font-semibold">Запись</div>
+      <div class="mt-5 md:mt-10 text-[#4B4B4B] text-sm md:text-lg">Пожалуйста, внимательно заполните форму, чтобы мы как можно быстрее с Вами связались.</div>
+      <form class="mt-4 space-y-4">
+        <div>   
+          <label class="font-medium text-base md:text-lg">ФИО</label><br>
+          <div class="bg-gradient-to-r from-[#5580E9] to-[#8961D1] mt-1 md:mt-3 p-[1.5px] rounded-xl">
+            <input class="w-full border rounded-xl py-2 pl-4 " type="input" name="FIO">
+          </div>
+        </div>
+        <div>   
+          <label class="font-medium text-base md:text-lg">Телефон</label><br>
+          <div class="bg-gradient-to-r from-[#5580E9] to-[#8961D1] mt-1 md:mt-3 p-[1.5px] rounded-xl">
+            <input class="w-full border rounded-xl py-2 pl-4 " type="input" name="phone">
+          </div>
+        </div>
+        <div>   
+          <label class="font-medium text-base md:text-lg">Электронная почта</label><br>
+          <div class="bg-gradient-to-r from-[#5580E9] to-[#8961D1] mt-1 md:mt-3 p-[1.5px] rounded-xl">
+            <input class="w-full border rounded-xl py-2 pl-4 " type="input" name="email">
+          </div>
+        </div>
+        <div class="flex">
+          <div class="bg-gradient-to-r from-[#5580E9] to-[#8961D1] rounded-md p-[1.25px] w-fit h-fit leading-3">
+            <input class="rounded-md checked:bg-transparent" type="checkbox">
+          </div>
+          <label class="ml-3" for="">Я внимательно ознакомился и согласен с Политикой конфиденциальности</label>
+        </div>
+        <div>
+          <div class="w-full text-center bg-gradient-to-r from-[#5580E9] to-[#8961D1] rounded-xl text-white p-2 text-base md:text-lg font-semibold">ОТПРАВИТЬ</div>
+        </div>
+      </form>
+    </div>
+    <div class="mt-11 lg:mt-20 h-[80px] lg:h-[132px] w-full flex items-center bg-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.15)]">
+      <div class="container mx-auto px-10 lg:px-24 flex justify-between items-center" id="top-bar">
+        <div class="flex items-center">
           <div class="text-base lg:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-[#5580E9] to-[#8961D1] font-semibold">Автошкола ВятГУ</div>
         </div>
-      </div>
-      <div class="hidden lg:flex lg:space-x-8"><a class="text-base font-semibold" href="/">Обучение</a><a class="text-base font-semibold" href="/">Информация</a><a class="text-base font-semibold" href="/">Отзывы</a><a class="text-base font-semibold" href="/">Галерея</a></div>
-      <div class="lg:hidden cursor-pointer" id="top-bar-menu-open"><img src="./assets/burger.svg"></div>
-    </div>
-  </div>
-  <div class="mx-auto mt-[70px] lg:mt-[100px] w-full lg:container h-full lg:h-[600px] relative">
-    <div class="h-[350px] md:hidden"></div>
-    <div class="flex flex-col lg:flex-row lg:justify-end h-full"><img src="./assets/woman-traveling-with-her-car.png"></div>
-    <div class="absolute flex flex-col md:flex-row top-0 h-full w-full">
-      <div class="h-full w-1/2 hidden md:block md:bg-gradient-to-r from-[#5580E9FF] via-[#5580E9FF] 2xl:to-[#557fe9FF] to-[#5580E9B3]"></div>
-      <div class="h-full w-1/2 hidden md:block md:bg-gradient-to-r from-[#5580E9B3] 2xl:from-[#5580E9FF] 2xl:via-[#5580E9B3] "></div>
-      <div class="w-full h-1/2 md:hidden bg-gradient-to-b from-[#5580E9FF] via-[#5580E9FF] to-[#5580E9FF]"></div>
-      <div class="w-full h-1/2 md:hidden bg-gradient-to-b from-[#5580E9FF] via-[#5580E9B3]"></div>
-    </div>
-    <div class="absolute top-0 left-0 h-full w-full">
-      <div class="flex flex-col h-full md:justify-center mt-16 md:mt-0  mx-10 lg:mx-24 text-white">
-        <div class="text-base md:text-2xl">ВятГУ</div>
-        <div class="text-xl md:text-4xl mt-3">Автошкола Вятского <br/> Государственного Университета</div>
-        <div class="text-sm md:text-lg mt-10">Удобная форма обучения и оплата в рассрочку без %</div>
-        <div class="flex cursor-pointer justify-center items-center border rounded-xl bg-white text-[#597EE7] text-base md:text-2xl font-bold mt-14  md:px-24 py-4 w-full md:w-fit">
-          <div>Записаться</div>
-        </div>
+        <div class="flex space-x-10 lg:space-x-16"><a class="text-base font-semibold" href="/"><img class="h-[20px] lg:h-auto" src="./assets/instagram.svg"></a><a class="text-base font-semibold" href="/"><img class="h-[20px] lg:h-auto" src="./assets/vk.svg"></a></div>
       </div>
     </div>
-  </div>
-  <div class="mx-auto w-full lg:container px-10 lg:px-24 mt-20">
-    <div class="text-[20px] md:text-[32px] font-semibold">Стоимость</div>
-    <div class="mt-10 flex flex-col md:flex-row space-y-7 md:space-y-0 md:space-x-6">
-      <div class="border bg-gradient-to-r from-[#5580E9] to-[#8961D1] w-full rounded-xl">
-        <div class="bg-white m-[1px] rounded-t-xl py-6"> 
-          <div class="ml-6 lg:ml-16">
-            <div class="text-sm md:text-lg text-[#5580E9]">Услуга</div>
-            <div class="text-base md:text-2xl font-semibold mt-1">Очная форма обучения</div>
-          </div>
-        </div>
-        <div class="ml-6 lg:ml-16 text-white text-lg md:text-[27px] font-semibold py-2 md:py-4">23000 руб.</div>
-      </div>
-      <div class="border bg-gradient-to-r from-[#D0D0D0] to-[#D0D0D0] w-full rounded-xl">
-        <div class="bg-white m-[1px] rounded-t-xl py-6"> 
-          <div class="ml-6 lg:ml-16">
-            <div class="text-sm md:text-lg text-[#5580E9]">Услуга</div>
-            <div class="text-base md:text-2xl font-semibold mt-1">Очная форма обучения</div>
-          </div>
-        </div>
-        <div class="ml-6 lg:ml-16 text-white text-lg md:text-[27px] font-semibold py-2 md:py-4">22000 руб.</div>
-      </div>
-    </div>
-    <div class="mt-10">
-      <ul class="indent-1 md:indent-8 space-y-2 list-inside font-medium text-sm md:text-lg marker:content-[url(./../assets/marker-sm.svg)] md:marker:content-[url(./../assets/marker.svg)] marker:before:pr-4 md:marker:before:pr-6 marker:h-10 marker:w-10 leading-6" role="list">
-        <li>В стоимость входит: теория, автодром, город, ГСМ (бензин), компьютерный класс, школьные экзамены, предоставление автомобиля на экзамен в ГИБДД в составе своей группы.</li>
-        <li>Имеется рассрочка платежа: первоначальный взнос 5000 р., остальные взносы на протяжении всего обучения.</li>
-        <li>Срок обучения: 2,5 - 3,5 месяца.</li>
-        <li>По окончании курсов автошкола предоставляет документы для ИФНС РФ на возмещение НДФЛ (13%) за обучение.</li>
-      </ul>
-    </div>
-  </div>
-  <div class="mx-auto w-full lg:container px-10 lg:px-24 mt-10 mb-10">
-    <div class="text-[20px] md:text-[32px] font-semibold">Набор в группы</div>
-    <div class="text-sm md:text-lg font-medium mt-3 md:mt-10">Набор в группы осуществляется ежемесячно</div>
-    <div class="mt-4 md:mt-10 flex flex-col space-y-6">
-      <div>
-        <div class="text-base md:text-2xl font-semibold">Онлайн-обучение</div>
-        <div class="mt-4 md:mt-9 border bg-gradient-to-r from-[#5580E9] to-[#8961D1] w-full rounded-xl">
-          <div class="bg-white m-[1px] rounded-t-xl py-6"> 
-            <div class="ml-6 md:ml-16">
-              <div class="text-[10px] md:text-sm">Онлайн обучение</div>
-              <div class="text-base md:text-lg font-semibold mt-1 text-[#5580E9]">Запись осуществляется в любое время</div>
-            </div>
-          </div>
-          <div class="text-white text-center text-base md:text-lg font-semibold py-2 md:py-4">Записаться</div>
-        </div>
-      </div>
-      <div>
-        <div class="text-base md:text-2xl font-semibold">Очное обучение</div>
-        <div class="text-base md:text-lg font-medium mt-2 mb-5 md:mb-10">Учебный класс (ул.Ленина, 111а)</div>
-        <div class="flex flex-col md:flex-row space-y-7 md:space-y-0 md:space-x-6">
-          <div class=" border bg-gradient-to-r from-[#5580E9] to-[#8961D1] w-full rounded-xl">
-            <div class="bg-white m-[1px] rounded-t-xl py-6"> 
-              <div class="ml-5">
-                <div class="text-[10px] md:text-sm">Утренние группы</div>
-                <div class="text-base md:text-lg text-[#5580E9] font-bold">18 января 2023 год</div>
-                <div class="text-base md:text-lg font-medium mt-1">Организационное собрание</div>
-                <div class="flex items-center mt-2"><img class="h-[25px] md:h-auto" src="./assets/clock.svg">
-                  <div class="ml-2 md:ml-3 text-base md:text-lg font-semibold">C 10:00</div>
-                </div>
-              </div>
-            </div>
-            <div class="text-white text-center text-base md:text-lg font-semibold py-2 md:py-4">Записаться</div>
-          </div>
-          <div class="border bg-gradient-to-r from-[#5580E9] to-[#8961D1] w-full rounded-xl">
-            <div class="bg-white m-[1px] rounded-t-xl py-6"> 
-              <div class="ml-5">
-                <div class="text-[10px] md:text-sm">Вечерние группы</div>
-                <div class="text-base md:text-lg text-[#5580E9] font-bold">13 декабря 2022 год</div>
-                <div class="text-base md:text-lg font-medium mt-1">Организационное собрание</div>
-                <div class="flex items-center mt-2"><img class="h-[25px] md:h-auto" src="./assets/clock.svg">
-                  <div class="ml-2 md:ml-3 text-base md:text-lg font-semibold">C 18:00</div>
-                </div>
-              </div>
-            </div>
-            <div class="text-white text-center text-base md:text-lg font-semibold py-2 md:py-4">Записаться</div>
-          </div>
-          <div class="border bg-gradient-to-r from-[#5580E9] to-[#8961D1] w-full rounded-xl">
-            <div class="bg-white m-[1px] rounded-t-xl py-6"> 
-              <div class="ml-5">
-                <div class="text-[10px] md:text-sm">Группы выходного дня</div>
-                <div class="text-base md:text-lg text-[#5580E9] font-bold">21 января 2023 год</div>
-                <div class="text-base md:text-lg font-medium mt-1">Организационное собрание</div>
-                <div class="flex items-center mt-2"><img class="h-[25px] md:h-auto" src="./assets/clock.svg">
-                  <div class="ml-2 md:ml-3 text-base md:text-lg font-semibold">C 10:00</div>
-                </div>
-              </div>
-            </div>
-            <div class="text-white text-center text-base md:text-lg font-semibold py-2 md:py-4">Записаться</div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="text-base md:text-2xl font-semibold">Очное обучение</div>
-        <div class="text-base md:text-lg font-medium mt-2 mb-5 md:mb-10">Учебный класс (Студенческий проезд, 11)</div>
-        <div class="flex flex-col md:flex-row space-y-7 md:space-y-0 md:space-x-6">
-          <div class=" border bg-gradient-to-r from-[#5580E9] to-[#8961D1] w-full rounded-xl">
-            <div class="bg-white m-[1px] rounded-t-xl py-6"> 
-              <div class="ml-5">
-                <div class="text-[10px] md:text-sm">Вечерние группы</div>
-                <div class="text-base md:text-lg text-[#5580E9] font-bold">24 января 2023 год</div>
-                <div class="text-base md:text-lg font-medium mt-1">Организационное собрание</div>
-                <div class="flex items-center mt-2"><img class="h-[25px] md:h-auto" src="./assets/clock.svg">
-                  <div class="ml-2 md:ml-3 text-base md:text-lg font-semibold">C 18:00</div>
-                </div>
-              </div>
-            </div>
-            <div class="text-white text-center text-base md:text-lg font-semibold py-2 md:py-4">Записаться</div>
-          </div>
-          <div class="border bg-gradient-to-r from-[#5580E9] to-[#8961D1] w-full rounded-xl">
-            <div class="bg-white m-[1px] rounded-t-xl py-6"> 
-              <div class="ml-5">
-                <div class="text-[10px] md:text-sm">Группы выходного дня</div>
-                <div class="text-base md:text-lg text-[#5580E9] font-bold">Нет набора</div>
-                <div class="text-base md:text-lg font-medium mt-1">Организационное собрание</div>
-                <div class="flex items-center mt-2"><img class="h-[25px] md:h-auto" src="./assets/clock.svg">
-                  <div class="ml-2 md:ml-3 text-base md:text-lg font-semibold">-</div>
-                </div>
-              </div>
-            </div>
-            <div class="text-white text-center text-base md:text-lg font-semibold py-2 md:py-4"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mt-6 text-sm md:text-lg leading-8 font-medium">Практические занятия в любой день недели! <br class="hidden md:block"/> Наши мастера инструктора работают в утреннее, дневное, вечернее время, в выходные и праздничные дни.</div>
-  </div>
-  <div class="mx-auto w-full lg:container px-10 lg:px-24 mt-10 mb-10">
-    <div class="text-[20px] md:text-[32px] font-semibold">Права в несколько шагов</div>
-    <div class="mt-5 md:mt-10 grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-16">
-      <div class="relative">
-        <div class="pl-10 md:pl-0 text-base md:text-lg font-semibold">Теория</div>
-        <div class="absolute md:static top-0 h-full md:h-auto md:mt-5 md:flex md:items-center">
-          <div class="md:h-0 border border-[#5580E9B2] bg-[#5580E9B2] absolute h-[calc(100%_+_2.25rem)] md:w-[calc(100%_+_4rem)] top-4 md:top-auto left-[0.85rem] md:left-4"></div><img src="./assets/circles.svg">
-        </div>
-        <div class="pl-10 md:pl-0 mt-3">Первые 2 недели - изучение теории</div>
-      </div>
-      <div class="relative">
-        <div class="pl-10 md:pl-0 text-base md:text-lg font-semibold">Практика</div>
-        <div class="absolute md:static top-0 h-full md:h-auto md:mt-5 md:flex md:items-center">
-          <div class="md:h-0 border border-[#5580E9B2] bg-[#5580E9B2] absolute h-[calc(100%_+_2.25rem)] md:w-[calc(100%_+_4rem)] top-4 md:top-auto left-[0.85rem] md:left-4"></div><img src="./assets/circles.svg">
-        </div>
-        <div class="pl-10 md:pl-0 mt-3">К теории добавляется практика на автодроме и в городе</div>
-      </div>
-      <div class="relative">
-        <div class="pl-10 md:pl-0 text-base md:text-lg font-semibold whitespace-nowrap">Экзамены в автошколе</div>
-        <div class="absolute md:static top-0 h-full md:h-auto md:mt-5 md:flex md:items-center">
-          <div class="md:h-0 border border-[#5580E9B2] bg-[#5580E9B2] absolute h-[calc(100%_+_2.25rem)] md:w-[calc(100%_+_4rem)] top-4 md:top-auto left-[0.85rem] md:left-4"></div><img src="./assets/circles.svg">
-        </div>
-        <div class="pl-10 md:pl-0 mt-3">Сдайте внутренние экзамены по теории и практике</div>
-      </div>
-      <div class="relative">
-        <div class="pl-10 md:pl-0 text-base md:text-lg font-semibold whitespace-nowrap">Экзамены в ГИБДД</div>
-        <div class="absolute md:static top-0 h-full md:h-auto md:mt-5 md:flex md:items-center"><img src="./assets/circles.svg"></div>
-        <div class="pl-10 md:pl-0 mt-3">Сдайте экзамены в ГИБДД и получите водительские права</div>
-      </div>
-    </div>
-  </div>
-  <div class="px-10 lg:px-24 mx-auto container mt-[70px] lg:mt-[100px] ">
-    <div class=" h-full lg:h-[350px] relative rounded-xl overflow-hidden">
-      <div class="hidden lg:flex flex-col lg:flex-row lg:justify-end h-full"><img src="./assets/woman-traveling-with-her-car.png"></div>
-      <div class="absolute flex flex-col md:flex-row top-0 left-0 h-full w-full">
-        <div class="h-full w-1/2 hidden md:block md:bg-gradient-to-r from-[#5580E9FF] via-[#5580E9FF] 2xl:to-[#557fe9FF] to-[#5580E9FF]"></div>
-        <div class="h-full w-1/2 hidden md:block md:bg-gradient-to-r from-[#5580E9FF] 2xl:from-[#5580E9FF] 2xl:via-[#5580E9FF] "></div>
-        <div class="w-full h-full md:hidden bg-gradient-to-r from-[#5580E9] to-[#8961D1]"></div>
-      </div>
-      <div class="relative md:absolute top-0 left-0 h-full w-full font-semibold">
-        <div class="py-8 flex flex-col h-full md:justify-center mt-0 mx-4 md:mx-10 lg:mx-24 text-white">
-          <div class="text-[20px] md:text-[32px] ">Для поступления необходимо:</div>
-          <ol class="mt-5 list-decimal list-inside leading-10 text-sm md:text-lg">
-            <li>Паспорт (копия паспорта: первая страница и прописка)</li>
-            <li>СНИЛС</li>
-            <li>Заявление</li>
-            <li>Медицинская справка формы 003-В/у</li>
-            <li>1 фотография 3х4</li>
-          </ol>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="mx-auto w-full lg:container px-10 lg:px-24 mt-20">
-    <div class="text-[20px] md:text-[32px] font-semibold mb-5">Лицензии</div>
-    <div class="grid grid-cols-2 md:grid-cols-4 mt-4 md:mt-8 gap-4"><img src="./assets/obrazec-licenzij-na-obrazovatelnuyu-deyatelnost.jpg"><img src="./assets/obrazec-licenzij-na-obrazovatelnuyu-deyatelnost.jpg"><img src="./assets/obrazec-licenzij-na-obrazovatelnuyu-deyatelnost.jpg"><img src="./assets/obrazec-licenzij-na-obrazovatelnuyu-deyatelnost.jpg">
-    </div>
-  </div>
-  <div class="mx-auto w-full lg:container px-10 lg:px-24 mt-20">
-    <div class="text-[20px] md:text-[32px] font-semibold">Содержание теоретического курса</div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/theory/book.svg">
-        <div class="text-sm md:text-[20px] ml-3">Правила дорожного движения</div>
-      </div>
-      <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/theory/car.svg">
-        <div class="text-sm md:text-[20px] ml-3">Основы безопасности дорожного движения</div>
-      </div>
-      <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/theory/repair-tools.svg">
-        <div class="text-sm md:text-[20px] ml-3">Техническое устройство автомобиля</div>
-      </div>
-      <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/theory/medicine.svg">
-        <div class="text-sm md:text-[20px] ml-3">Оказание первой медицинской помощи</div>
-      </div>
-    </div>
-  </div>
-  <div class="mx-auto w-full lg:container px-10 lg:px-24 mt-20">
-    <div class="text-[20px] md:text-[32px] font-semibold">Вождение на учебном автодроме</div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/practice/garage.svg">
-        <div class="text-sm md:text-[20px] ml-3">Заезд в гараж</div>
-      </div>
-      <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/practice/snake.svg">
-        <div class="text-sm md:text-[20px] ml-3">“Змейка” маневрирование в ограниченном пространстве</div>
-      </div>
-      <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/practice/parallel.svg">
-        <div class="text-sm md:text-[20px] ml-3">Параллельная парковка</div>
-      </div>
-      <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/practice/up-right-arrow.svg">
-        <div class="text-sm md:text-[20px] ml-3">Эстакада (трогание с места в горку)</div>
-      </div>
-      <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/practice/turn-right.svg">
-        <div class="text-sm md:text-[20px] ml-3">Разворот в ограниченном пространстве</div>
-      </div>
-      <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/practice/location.svg">
-        <div class="text-sm md:text-[20px] ml-3">Остановка в заданном месте</div>
-      </div>
-      <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/practice/turn-top.svg">
-        <div class="text-sm md:text-[20px] ml-3">Повороты на 90 градусов</div>
-      </div>
-    </div>
-  </div>
-  <div class="mx-auto w-full lg:container px-10 lg:px-24 mt-20">
-    <div class="text-[20px] md:text-[32px] font-semibold">Вождение на городских маршрутах Кирова, где разрешена учебная езда</div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/routes/road.svg">
-        <div class="text-sm md:text-[20px] ml-3">С малой интенсивностью движения</div>
-      </div>
-      <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/routes/car.svg">
-        <div class="text-sm md:text-[20px] ml-3">Движение в потоке</div>
-      </div>
-    </div>
-  </div>
-  <div class="mx-auto w-full lg:container px-10 lg:px-24 mt-20">
-    <div class="text-[20px] md:text-[32px] font-semibold">Всему этому вас обучат</div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/person.svg">
-        <div class="flex flex-col ml-3">
-          <div class="text-base md:text-[22px] font-semibold">Ванеев Алексей Петрович</div>
-          <div class="text-sm md:text-[20px] mt-2">Текст Текст Текст</div>
-        </div>
-      </div>
-      <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/person.svg">
-        <div class="flex flex-col ml-3">
-          <div class="text-base md:text-[22px] font-semibold">Ванеев Алексей Петрович</div>
-          <div class="text-sm md:text-[20px] mt-2">Текст Текст Текст</div>
-        </div>
-      </div>
-      <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/person.svg">
-        <div class="flex flex-col ml-3">
-          <div class="text-base md:text-[22px] font-semibold">Ванеев Алексей Петрович</div>
-          <div class="text-sm md:text-[20px] mt-2">Текст Текст Текст</div>
-        </div>
-      </div>
-      <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/person.svg">
-        <div class="flex flex-col ml-3">
-          <div class="text-base md:text-[22px] font-semibold">Ванеев Алексей Петрович</div>
-          <div class="text-sm md:text-[20px] mt-2">Текст Текст Текст</div>
-        </div>
-      </div>
-      <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/person.svg">
-        <div class="flex flex-col ml-3">
-          <div class="text-base md:text-[22px] font-semibold">Ванеев Алексей Петрович</div>
-          <div class="text-sm md:text-[20px] mt-2">Текст Текст Текст</div>
-        </div>
-      </div>
-      <div class="flex items-center mt-5 md:mt-10"><img class="h-[80px] md:h-[100px]" src="./assets/person.svg">
-        <div class="flex flex-col ml-3">
-          <div class="text-base md:text-[22px] font-semibold">Ванеев Алексей Петрович</div>
-          <div class="text-sm md:text-[20px] mt-2">Текст Текст Текст</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="mx-auto w-full lg:container px-10 lg:px-24 mt-20">
-    <div class="text-[20px] md:text-[32px] font-semibold">Наши транспортные средства</div>
-    <div class="mt-5 md:mt-10 grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-10 md:gap-y-16">
-      <div><img class="h-[200px] md:h-[250px] mx-auto" src="./assets/our_cars/car_example1.jpg">
-        <div class="mt-[25px] md:mt-[35px] text-lg font-medium">Текст текст текст</div>
-      </div>
-      <div><img class="h-[200px] md:h-[250px] mx-auto" src="./assets/our_cars/car_example2.jpg">
-        <div class="mt-[25px] md:mt-[35px] text-lg font-medium">Текст текст текст</div>
-      </div>
-      <div><img class="h-[200px] md:h-[250px] mx-auto" src="./assets/our_cars/car_example3.png">
-        <div class="mt-[25px] md:mt-[35px] text-lg font-medium">Текст текст текст</div>
-      </div>
-      <div><img class="h-[200px] md:h-[250px] mx-auto" src="./assets/our_cars/car_example1.jpg">
-        <div class="mt-[25px] md:mt-[35px] text-lg font-medium">Текст текст текст</div>
-      </div>
-      <div><img class="h-[200px] md:h-[250px] mx-auto" src="./assets/our_cars/car_example2.jpg">
-        <div class="mt-[25px] md:mt-[35px] text-lg font-medium">Текст текст текст</div>
-      </div>
-      <div><img class="h-[200px] md:h-[250px] mx-auto" src="./assets/our_cars/car_example3.png">
-        <div class="mt-[25px] md:mt-[35px] text-lg font-medium">Текст текст текст</div>
-      </div>
-    </div>
-  </div>
-  <div class="mx-auto w-full lg:container px-10 lg:px-24 mt-10 mb-10">
-    <div class="text-[20px] md:text-[32px] font-semibold">Отзывы</div>
-    <div class="mt-5 md:mt-10 swiper w-full">
-      <!--  Additional required wrapper -->
-      <div class="swiper-wrapper min-h-[100px] md:min-h-[150px]">
-        <!--  Slides -->
-        <div class="swiper-slide flex items-center justify-center bg-slate-400 h-auto"> 
-          <div>1</div>
-        </div>
-        <div class="swiper-slide flex items-center justify-center  bg-red-400  h-full"> 
-          <div>2</div>
-        </div>
-        <div class="swiper-slide flex items-center justify-center  bg-green-400  h-full"> 
-          <div>3</div>
-        </div>
-        <div class="swiper-slide flex items-center justify-center  bg-orange-600  h-full"> 
-          <div>4</div>
-        </div>
-        <div class="swiper-slide flex items-center justify-center  bg-teal-500  h-full"> 
-          <div>5</div>
-        </div>
-      </div>
-      <div class="mt-10 flex justify-center items-center">
-        <div class="review-prev font-semibold text-[#5580E9] text-lg"> 
-          <div class="p-3"><</div>
-        </div>
-        <div class="!static !w-fit swiper-pagination"></div>
-        <div class="review-next font-semibold text-[#5580E9] text-lg">
-          <div class="p-3">></div>
-        </div>
-      </div>
-    </div>
-    <div class="mt-5 md:mt-10">
-      <div class="w-full text-center bg-gradient-to-r from-[#5580E9] to-[#8961D1] rounded-xl text-white p-2 text-base md:text-lg font-semibold">Читать все отзывы</div>
-    </div>
-  </div>
-  <div class="mx-auto w-full lg:container px-10 lg:px-24 mt-20">
-    <div class="text-[20px] md:text-[32px] font-semibold mb-5">Контакты</div>
-    <div class="flex flex-col md:flex-row justify-between">
-      <ul class="text-sm space-y-3 leading-5 md:text-lg font-medium mb-5">
-        <li class="flex">
-          <div>Телефон </div>
-          <div class="ml-6">8 800 555 35 35</div>
-        </li>
-        <li class="flex">
-          <div>Телефон </div>
-          <div class="ml-6">8 800 555 35 35</div>
-        </li>
-        <li class="flex">
-          <div>Телефон </div>
-          <div class="ml-6">8 800 555 35 35</div>
-        </li>
-      </ul>
-      <div class="w-full md:w-2/3">
-        <iframe class="w-full min-h-[300px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2079.280673682488!2d49.67925401604257!3d58.59079828140649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43fcf4252d7505d5%3A0x7ec7269fe5c330bd!2z0JDQstGC0L7RiNC60L7Qu9CwINCS0Y_RgtCT0KMs0JLRj9GC0YHQutC40Lkg0LPQvtGB0YPQtNCw0YDRgdGC0LLQtdC90L3Ri9C5INGD0L3QuNCy0LXRgNGB0LjRgtC10YI!5e0!3m2!1sru!2sru!4v1673938791776!5m2!1sru!2sru"> </iframe>
-      </div>
-    </div>
-  </div>
-  <div class="mx-auto w-full lg:container px-10 lg:px-24 mt-10 mb-10">
-    <div class="text-[20px] md:text-[32px] font-semibold">Запись</div>
-    <div class="mt-5 md:mt-10 text-[#4B4B4B] text-sm md:text-lg">Пожалуйста, внимательно заполните форму, чтобы мы как можно быстрее с Вами связались.</div>
-    <form class="mt-4 space-y-4">
-      <div>   
-        <label class="font-medium text-base md:text-lg">ФИО</label><br>
-        <div class="bg-gradient-to-r from-[#5580E9] to-[#8961D1] mt-1 md:mt-3 p-[1.5px] rounded-xl">
-          <input class="w-full border rounded-xl py-2 pl-4 " type="input" name="FIO">
-        </div>
-      </div>
-      <div>   
-        <label class="font-medium text-base md:text-lg">Телефон</label><br>
-        <div class="bg-gradient-to-r from-[#5580E9] to-[#8961D1] mt-1 md:mt-3 p-[1.5px] rounded-xl">
-          <input class="w-full border rounded-xl py-2 pl-4 " type="input" name="phone">
-        </div>
-      </div>
-      <div>   
-        <label class="font-medium text-base md:text-lg">Электронная почта</label><br>
-        <div class="bg-gradient-to-r from-[#5580E9] to-[#8961D1] mt-1 md:mt-3 p-[1.5px] rounded-xl">
-          <input class="w-full border rounded-xl py-2 pl-4 " type="input" name="email">
-        </div>
-      </div>
-      <div class="flex">
-        <div class="bg-gradient-to-r from-[#5580E9] to-[#8961D1] rounded-md p-[1.25px] w-fit h-fit leading-3">
-          <input class="rounded-md checked:bg-transparent" type="checkbox">
-        </div>
-        <label class="ml-3" for="">Я внимательно ознакомился и согласен с Политикой конфиденциальности</label>
-      </div>
-      <div>
-        <div class="w-full text-center bg-gradient-to-r from-[#5580E9] to-[#8961D1] rounded-xl text-white p-2 text-base md:text-lg font-semibold">ОТПРАВИТЬ</div>
-      </div>
-    </form>
-  </div>
-  <div class="mt-11 lg:mt-20 h-[80px] lg:h-[132px] w-full flex items-center bg-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.15)]">
-    <div class="container mx-auto px-10 lg:px-24 flex justify-between items-center" id="top-bar">
-      <div class="flex items-center">
-        <div class="text-base lg:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-[#5580E9] to-[#8961D1] font-semibold">Автошкола ВятГУ</div>
-      </div>
-      <div class="flex space-x-10 lg:space-x-16"><a class="text-base font-semibold" href="/"><img class="h-[20px] lg:h-auto" src="./assets/instagram.svg"></a><a class="text-base font-semibold" href="/"><img class="h-[20px] lg:h-auto" src="./assets/vk.svg"></a></div>
-    </div>
-  </div>
+  </body>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="./src/app.js"> </script>

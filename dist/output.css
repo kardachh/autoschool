@@ -947,6 +947,10 @@ select {
   list-style-type: decimal;
 }
 
+.list-disc {
+  list-style-type: disc;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -1547,6 +1551,11 @@ select {
 
   .md\:text-\[22px\] {
     font-size: 22px;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .md\:marker\:content-\[url\(\.\/\.\.\/assets\/marker\.svg\)\] *::marker {
