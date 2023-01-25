@@ -1,0 +1,17 @@
+- 
+    const arrFacilities = [
+        "Тренажер",
+        "Детское удерживающее устройство",
+        "Гибкое связующее звено (буксировочный трос)",
+        "Тягово - сцепное устройство",
+        "Компьютер с соответствующим программным обеспечением",
+        "Мультимедийный проектор",
+        "Экран (монитор, электронная доска)",
+        "Магнитная доска со схемой населенного пункта",
+    ]
+
+div(class="mx-auto w-full lg:container px-10 lg:px-24 mt-20")
+    div(class="text-[20px] md:text-[32px] font-semibold") Оборудование и техническое средства обучения
+    ul(class="list-disc list-inside font-medium text-base md:text-xl leading-5 mt-5 md:mt-10")
+        each val in arrFacilities
+            li(class="")=val
