@@ -921,6 +921,10 @@ select {
   height: 0.75rem;
 }
 
+.h-\[50px\] {
+  height: 50px;
+}
+
 .min-h-\[100px\] {
   min-height: 100px;
 }
@@ -997,6 +1001,10 @@ select {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .gap-x-4 {
@@ -1434,6 +1442,14 @@ select {
     right: 1.5rem;
   }
 
+  .md\:col-start-2 {
+    grid-column-start: 2;
+  }
+
+  .md\:row-start-2 {
+    grid-row-start: 2;
+  }
+
   .md\:mx-10 {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
@@ -1513,6 +1529,10 @@ select {
 
   .md\:h-6 {
     height: 1.5rem;
+  }
+
+  .md\:h-\[70px\] {
+    height: 70px;
   }
 
   .md\:min-h-\[150px\] {
